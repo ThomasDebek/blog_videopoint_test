@@ -1,0 +1,21 @@
+<h1>Witaj mistrzu</h1>
+<div class="lead">
+  Jestes najlepszym koderem na calym swiecie
+</div>
+
+<p><%= 3 -23  %></p>
+
+<%= @name %>
+
+<% if @greet %>
+    <p>Hellooool Ziomek <%= @name %> </p>
+<% else %>
+    <p>Buu</p>
+<% end %>
+
+
+<ul>
+  <% @numbers.each do |number| %>
+  <li><%= number %></li>
+      <% end %>
+</ul>
