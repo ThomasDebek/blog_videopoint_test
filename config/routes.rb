@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get 'o-blogu' => 'home#about', as: :about
+  get 'kontakt' => 'home#contact',as: :contact
+
 
 
  # get 'home/index'

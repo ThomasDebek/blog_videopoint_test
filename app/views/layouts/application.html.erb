@@ -24,15 +24,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="#">Strona glowna</a>
-            </li>
-            <li>
-              <a href="#about">O Blogu </a>
-            </li>
-            <li>
-              <a href="#contact">Skontaktuj sie</a>
-            </li>
+            <li <% if params[:controller]=="home" && params[:action]=="index" %> class="active" <% end %> ><a href="<%= root_path %>">Strona glowna</a></li>
+            <li <% if params[:controller]=="home" && params[:action]=="about" %> class="active" <% end %> ><a href="<%= about_path %>">O Blogu </a></li>
+            <li <% if params[:controller]=="home" && params[:action]=="contact" %> class="active" <% end %> ><a href="<%= contact_path  %>">Skontaktuj sie</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <ul class="dropdown-menu">
